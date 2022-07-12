@@ -457,9 +457,9 @@ const btnCheck = document.querySelector('.js-btn-check');
 console.log(inputVerbs.value);
 
 btnCheck.addEventListener('click', () => {
-  if (inputVerbs.value === arrRandomFormVerbs[2]) {
+  if (inputVerbs.value.toLowerCase() === arrRandomFormVerbs[2]) {
     document.body.style.backgroundColor = '#6D972E';
-  } else if (inputVerbs.value !== arrRandomFormVerbs[2]) {
+  } else if (inputVerbs.value.toLowerCase() !== arrRandomFormVerbs[2]) {
     document.body.style.backgroundColor = '#E45545';
   }
 });
