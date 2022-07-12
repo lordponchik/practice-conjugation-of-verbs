@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object of verbs</title>
+
+    <style>
+      .container {
+        max-width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+      }
+      .main-section__title {
+        text-align: center;
+        color: #4a4658;
+      }
+      .main-section__text {
+        text-align: center;
+        font-size: 20px;
+      }
+      .main-section__block-random-verbs {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .btn {
+        padding: 10px 10px;
+        border: none;
+        background-color: #debc74;
+        color: #fff;
+      }
+      .btn:hover,
+      .btn:focus {
+        background-color: #4a4658;
+      }
+      .main-section__text-random-verbs {
+        font-size: 28px;
+        color: #4a4658;
+      }
+      .main-section__block-random-form-verbs {
+        display: flex;
+        justify-content: space-around;
+      }
+      .main-section__input {
+        display: flex;
+        margin: 30px auto 0;
+        height: 50px;
+        padding: 10px;
+        font-size: 20px;
+      }
+      .main-section__btn-check {
+        display: flex;
+        margin: 30px auto 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header></header>
+
+    <main>
+      <section class="main-section">
+        <div class="container">
+          <h1 class="main-section__title">Спряжение глаголов</h1>
+          <p class="main-section__text">Всего: <span class="js-number-of-verbs"></span></p>
+          <div class="main-section__block-random-verbs">
+            <button class="main-section__btn-random-verbs btn js-btn-random-verbs">
+              Случайный глагол
+            </button>
+            <p class="main-section__text-random-verbs js-text-random-verbs">Глагол</p>
+          </div>
+          <div class="main-section__block-random-form-verbs">
+            <button class="main-section__btn-random-verbs btn js-btn-random-form-verbs">
+              Вариант
+            </button>
+            <div>
+              <p class="main-section__text-random-form-verbs js-text-random-verbs-deutsch"></p>
+              <p class="main-section__text-random-form-verbs js-text-random-verbs-russian"></p>
+            </div>
+          </div>
+          <input type="text" class="main-section__input js-input-verbs" value="" />
+          <button type="button" class="main-section__btn-check btn js-btn-check">Проверка</button>
+        </div>
+      </section>
+    </main>
+
+    <footer></footer>
+    <!-- <script src="./js/object-of-verbs.js" type="module"></script> -->
+    <script src="./js/object-of-verbs.js" type="module"></script>
+  </body>
+</html>
